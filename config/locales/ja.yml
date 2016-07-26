@@ -1,2 +1,57 @@
 ja:
-  hello: ハロー
+  activerecord:
+    models:
+      venue: 式場
+      venue_image: 式場画像
+      user: ユーザー
+      review: 口コミ
+      invoice: 費用明細
+    attributes:
+      venue:
+        id: ID
+        pref_id: 都道府県のID
+        area_id: エリアのID
+        name: 式場名
+        ruby: フリガナ
+        title: キャッチコピー
+        description: 説明
+        zip_code: 郵便番号
+        address: 住所
+        score_total: 総合評価
+        score_cost: 費用評価
+        score_venue: 式場設備評価
+        score_mc: 進行演出評価
+        score_food: 料理評価
+        score_staff: スタッフ評価
+        score_location: 立地評価
+      venue_image:
+        id: ID
+        venue_id: 式場ID
+        path: パス
+      user:
+        id: ID
+        nickname: ニックネーム
+        gender: 性別
+        birthday: 誕生日
+      review:
+        id: ID
+        user_id: ユーザーID
+        venue_id: 式場ID
+        score_total: 総合評価
+        score_cost: 費用評価
+        score_venue: 式場設備評価
+        score_mc: 進行演出評価
+        score_food: 料理評価
+        score_staff: スタッフ評価
+        score_location: 立地評価
+        title: 口コミタイトル
+        body: 口コミ内容
+        visited_on: 訪問日
+      invoice:
+        id: ID
+        user_id: ユーザーID
+        venue_id: 式場ID
+        title: 費用タイトル
+        body: 費用内容
+        total_amount: 合計金額
+        number_of_attendees: 招待人数
