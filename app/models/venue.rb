@@ -21,4 +21,7 @@
 #
 
 class Venue < ApplicationRecord
+  has_many :reviews
+  has_many :invoices
+  has_many :venue_images
 end
