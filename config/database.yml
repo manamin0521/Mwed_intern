@@ -23,3 +23,54 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+
+
+
+
+
+
+
+#
+# default: &default
+#   adapter: mysql2
+#   encoding: sjis
+#   pool: 5
+#
+# development:
+#   <<: *default
+#   username: wedding
+#   host: wedddb-development.mwed.work
+#   database: wedddb
+#   password: <%= ENV['DEVELOPMENT_DB_PASSWORD'] or abort "\e[31m!!!!! Set DEVELOPMENT_DB_PASSWORD -> https://mwed.esa.io/posts/69 !!!!!\e[0m" %>
+#
+# development_slave:
+#   <<: *default
+#   username: wedd
+#   host: wedddb-development.mwed.work
+#   database: wedddb
+#   password: abcdef
+#
+# staging:
+#   <<: *default
+#   username: wedding
+#   host: wedddb-development.mwed.work
+#   database: wedddb
+#   password: <%= ENV['DEVELOPMENT_DB_PASSWORD'] or abort "\e[31m!!!!! Set DEVELOPMENT_DB_PASSWORD -> https://mwed.esa.io/posts/69 !!!!!\e[0m" %>
+#
+# staging_slave:
+#   <<: *default
+#   username: wedd
+#   host: wedddb-development.mwed.work
+#   database: wedddb
+#   password: abcdef
+#
+# test: &test
+#   <<: *default
+#   username: root
+#   password:
+#   socket: /tmp/mysql.sock
+#   database: wedding_test
+#
+# test_slave:
+#   <<: *test
