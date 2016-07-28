@@ -1,0 +1,39 @@
+<style>
+  div {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  td {
+    padding: 10px;
+    white-space: nowrap;
+  }
+  td:last-child {
+    white-space: normal;
+  }
+</style>
+
+<div>
+  <% @model_names.each do |model_name| %>
+    <h1><%= model_name.camelcase %>（<%= t "activerecord.models.#{model_name}" %>）</h1>
+    <table class='table table-bordered'>
+      <thead>
+        <tr>
+          <th>カラム名</th>
+          <th>説明</th>
+          <th>データ型</th>
+          <th>例</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% (model_obj = model_name.camelcase.constantize).attribute_names.each do |attr_name| %>
+          <tr>
+            <td><%= attr_name %></td>
+            <td><%= t "activerecord.attributes.#{model_name}.#{attr_name}" %></td>
+            <td><%= model_obj.column_for_attribute(attr_name).type %></td>
+            <td><%= model_obj.last.send(attr_name) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</div>
