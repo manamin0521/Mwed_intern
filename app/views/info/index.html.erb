@@ -3,9 +3,6 @@
     padding: 0 30px;
     margin-bottom: 50px;
   }
-  table, td, th {
-    border: 1px solid gray;
-  }
   td {
     padding: 10px;
     white-space: nowrap;
@@ -18,7 +15,7 @@
 <div>
   <% @model_names.each do |model_name| %>
     <h1><%= model_name.camelcase %>（<%= t "activerecord.models.#{model_name}" %>）</h1>
-    <table>
+    <table class='table table-bordered'>
       <thead>
         <tr>
           <th>カラム名</th>
