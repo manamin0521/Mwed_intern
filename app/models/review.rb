@@ -13,7 +13,7 @@
 #  score_staff    :integer
 #  score_location :integer
 #  title          :string(200)
-#  body           :string(20000)
+#  body           :text(65535)
 #  visited_on     :datetime
 #
 
