@@ -20,4 +20,5 @@
 class Review < ApplicationRecord
   belongs_to :user
   belongs_to :venue
+  has_many :review_tags
 end
