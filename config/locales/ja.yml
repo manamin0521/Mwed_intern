@@ -5,7 +5,6 @@ ja:
       venue_image: 式場画像
       user: ユーザー
       review: 口コミ
-      review_tag: 口コミタグ
       invoice: 費用明細
     attributes:
       venue:
@@ -48,10 +47,6 @@ ja:
         title: 口コミタイトル
         body: 口コミ内容
         visited_on: 訪問日
-      review_tag:
-        id: ID
-        review_id: 口コミID
-        tag_name: タグ名
       invoice:
         id: ID
         user_id: ユーザーID
