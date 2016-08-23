@@ -6,11 +6,17 @@ ja:
       user: ユーザー
       review: 口コミ
       invoice: 費用明細
+      venue_genre: 式場ジャンル
     attributes:
+      venue_genre:
+        id: ID
+        name: ジャンル名
+        url: url
       venue:
         id: ID
         pref_id: 都道府県のID
         area_id: エリアのID
+        venue_genre_id: 式場ジャンルのID
         name: 式場名
         ruby: フリガナ
         title: キャッチコピー
