@@ -7,7 +7,13 @@ ja:
       review: 口コミ
       invoice: 費用明細
       venue_genre: 式場ジャンル
+      diy: 手作り
     attributes:
+      diy:
+        id: ID
+        title: タイトル
+        comment: コメント
+        url: url
       venue_genre:
         id: ID
         name: ジャンル名

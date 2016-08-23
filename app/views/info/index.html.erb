@@ -37,12 +37,20 @@
     </table>
   <% end %>
 </div>
+
+<hr>
+
 <div>
   <h2>画像の出し方</h2>
   <h3>式場画像</h3>
   <pre><code>image_tag(Venue.first.venue_images.first.image_url)</code></pre>
-  <%= image_tag(Venue.first.venue_images.first.image_url) %>
+  <%= image_tag(Venue.first.venue_images.first.image_url, width: 300) %>
+
   <h3>式場ジャンル画像</h3>
   <pre><code>image_tag(Venue.first.venue_genre.url)</code></pre>
-  <%= image_tag(Venue.first.venue_genre.url) %>
+  <%= image_tag(Venue.first.venue_genre.url, width: 300) %>
+
+  <h3>手作り画像</h3>
+  <pre><code>image_tag(Diy.first.url)</code></pre>
+  <%= image_tag(Diy.first.url, width: 300) %>
 </div>
