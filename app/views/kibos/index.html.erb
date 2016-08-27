@@ -1,0 +1,14 @@
+<div class="image">
+<h3>・身内のみ（~20人）</h3>
+	<%= link_to kibo_select_path('shokibo') do %>
+		<%= image_tag("miuchi.png", :size => "250x150") %>
+	<% end %>
+<br><h3>・友人・職場の人も(~70人)</h3>
+	<%= link_to kibo_select_path('tyukibo') do %>
+		<%= image_tag("sokosoko.jpg", :size => "250x150") %>
+	<% end %>
+<br><h3>・大人数(70人~)</h3>
+	<%= link_to kibo_select_path('daikibo') do %>
+		<%= image_tag("daitasuu.jpg", :size => "250x150") %>
+	<% end %>
+</div>

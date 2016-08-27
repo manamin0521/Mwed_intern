@@ -1,0 +1,12 @@
+<% VenueGenre.all.each do |genre| %>
+	<h3>
+	・<%= genre.name %>
+	</h3>
+	<div class="image">
+		<% genre.venues.limit(3).each do |venue| %>
+			<%= link_to type_path(venue.id) do %>
+				<%= image_tag(venue.venue_images.second.image_url, :size => "100x100") %>
+			<% end %>
+		<% end %>
+	</div>
+<% end %>

@@ -1,0 +1,7 @@
+<h3><%= @venue.name %></h3>
+<%= image_tag(@venue.venue_images.third.image_url, :class => "imagesize") %>
+<p>この画像でいいですか？</p>
+<div>
+<button type="button" class="btn btn-success"><%= link_to "はい", select_path(id: @venue.id) %></button>
+<button type="button" class="btn btn-success"><%= link_to "いいえ", images_path %></button>
+</div>

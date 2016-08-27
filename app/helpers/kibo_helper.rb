@@ -1,0 +1,2 @@
+module KiboHelper
+end

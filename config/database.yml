@@ -5,4 +5,4 @@ development:
   host: 172.16.0.162
   database: app
   username: internship
-  password: <%= abort 'The password has not been set!' %>
+  password: Godmaking-Educement-Thats

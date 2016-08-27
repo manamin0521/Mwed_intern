@@ -1,0 +1,12 @@
+<% @images.each do |image| %>
+	<h3>
+		・<%= image %>
+	</h3>
+	<div class="image">
+	<% Venue.where(image_type: image).limit(3).each do |venue| %>
+		<%= link_to image_path(venue.id) do %>
+			<%= image_tag(venue.venue_images.third.image_url, size: '100x100') %>
+		<% end %>
+	<% end %>
+	</div><br>
+<% end %>

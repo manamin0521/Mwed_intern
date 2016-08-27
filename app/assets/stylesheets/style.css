@@ -1,0 +1,209 @@
+.navbar-default {
+  background-color: #60c4ce !important;
+  border-color: #203ba5 !important;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1 !important;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff !important;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1 !important;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1 !important;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff !important;
+  background-color: #203ba5 !important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff !important;
+  background-color: #203ba5 !important;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff !important;
+  background-color: #203ba5 !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: #203ba5 !important;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #203ba5 !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1 !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1 !important;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1 !important;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1 !important;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff !important;
+    background-color: #203ba5 !important;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff !important;
+    background-color: #203ba5 !important;
+
+  }
+}
+.image :hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+ul.global_design {
+    display:table;
+    table-layout:fixed;
+  }
+ul.global_design li {
+    display:table-cell;
+}
+.table-ul {
+  background-color: #3ae;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+.table-ul li {
+  border-right: 1px solid #fff;
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+}
+.table-ul li:last-child {
+  border-right: 0;
+}
+.table-ul li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.table-ul1 {
+  background-color: #3ae;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+.table-ul1 li {
+  border-right: 1px solid #fff;
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+}
+.table-ul1 li:last-child {
+  border-right: 0;
+}
+.table-ul1 li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.table-ul2 {
+  background-color: #3ae;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+.table-ul2 li {
+  border-right: 1px solid #fff;
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+}
+.table-ul2 li:last-child {
+  border-right: 0;
+}
+.table-ul2 li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.imagesize{
+  width: 100% !important;
+}
+.max{
+  display: block;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.first{
+  background-color: #afeeee;
+  padding: 10px 10px;
+  -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+  -moz-border-radius: 10px;   /* Firefox用 */  
+}
+.last ul {
+-moz-column-count: 2;
+-webkit-column-count: 2;
+-o-column-count: 2;
+-ms-column-count: 2;
+}
+.last li:nth-of-type(2n) {
+--moz-column-break-after: always;
+-webkit-column-break-after: always;
+-o-column-break-after: always;
+-ms-column-break-after: always;
+}
+/*.col-xs-6 col-sm-3{
+  background-color: #3ae　!important;
+  text-align: center　!important;
+  height: 100px　!important;
+}*/
+
+
+
+@media screen and (max-width: 1000px) {
+   /* 表示領域が320px以下の場合に適用するスタイル */
+   .menu-pc {
+      display: none;
+   }
+   .menu-smp {
+      display: table;
+   }  
+}
+@media screen and (min-width: 1000px) {
+   /* 表示領域が320px以上の場合に適用するスタイル */
+    .menu-pc {
+      display: table;
+   }
+   .menu-smp {
+      display: none;
+   }  
+}

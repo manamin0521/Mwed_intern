@@ -1,0 +1,31 @@
+<h1>希望プラン</h1><br><br>
+<div class="last">
+<ul>
+<li><p>新郎さんの希望は</p>
+<%= image_tag("sinrou.jpg", :size => "150x150") %><br><br><br>
+</li>
+<li>
+<p>式場規模</p>
+<% if cookies[:selected_kibo] == 'shokibo' %>
+	<%= image_tag("miuchi.png", :size => "150x150") %>
+	<p>身内のみ（~20人）</p>
+<% elsif cookies[:selected_kibo] == 'tyukibo' %>
+	<%= image_tag("sokosoko.jpg", :size => "150x150") %>
+	<p>友人・職場の人も(~70人)</p>
+<% elsif cookies[:selected_kibo] == 'daikibo' %>
+	<%= image_tag("daikibo.jpg", :size => "150x150") %>
+	<p>大人数(70人~)</p>
+<% end %><br>
+</li>
+<li>	
+<p>・式場タイプ</p>
+<%= image_tag(@venue.venue_images.second.image_url, :size => "150x150") %>
+<div><%= @venue.venue_genre.name %></div><br>
+</li>
+<li>
+<p>・式場イメージ</p>
+<%= image_tag(@venue.venue_images.third.image_url, :size => "150x150") %>
+<div><%= @venue.image_type %></div><br>
+</li>
+</ul>
+</div>
